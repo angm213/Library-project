@@ -1,0 +1,23 @@
+@import '_variables.scss';
+
+.nav {
+    width: 100%;
+    background-color: $nav-bg;
+    padding: 3rem 0rem 3rem 0rem;
+    margin: 0;
+    border-bottom: 2px solid $borders;
+    box-shadow: 0 3px 15px $borders;
+    h1 {
+        color: $sorta-white;
+        font-weight: $bold;
+        margin: 0;
+        padding-left: 6rem;
+        font-size: 3rem;
+        @media (max-width: $mobile-breakpoint) {
+            width: 75%;
+            margin: auto;
+            padding: 0;
+            font-size: 2.5rem
+        }
+    }
+}

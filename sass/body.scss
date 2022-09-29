@@ -1,0 +1,115 @@
+.card-books-area {
+    width: 80%;
+    padding: 3rem;
+    .empty {
+        width: 30%;
+        height: 400px;
+        background-color: $sorta-white;
+    }
+}
+
+.btn {
+    position: fixed;
+    right: 4rem;
+    bottom: 5rem;
+    padding: 0.3rem 1rem 0.5rem 1rem;
+    font-family: $primary-font;
+    font-weight: 400;
+    background-color: $nav-bg;
+    border: 2px solid $borders;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    .btn-p {
+        justify-content: center;
+        align-items: center;
+        font-weight: $bold;
+        font-size: 2.5rem;
+        color: $sorta-white;
+        line-height: 1;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.card-books-area {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    @media (max-width: $tablet-breakpoint) {
+        width: 95%;
+        padding: 1rem 0 0 0;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        grid-template-rows: 1fr;
+    }
+    @media (max-width: $mobile-breakpoint) {
+        padding: 1rem 0 0 0;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        grid-template-rows: 1fr;
+        gap: .5rem
+    }
+    .book-body {
+        background-color: $sorta-white;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid $card-bd;
+        box-shadow: 5px 3px 10px $card-bd;
+        @media (max-width: $mobile-breakpoint) {
+            padding: .5rem;
+        }
+        .title {
+            font-size: 2rem;
+            color: $borders;
+            font-weight: $bold;
+            margin-bottom: .5rem;
+
+        }
+        .author, .pages {
+            font-size: 1.3rem;
+            margin: 0.75rem auto;
+            text-align: center;
+        }
+        #rem-btn, #read-btn {
+            min-width: 105px;
+            font-size: 1rem;
+            margin-top: 0.7rem;
+            padding: .5rem 1rem;
+            border: none;
+            background-color: $borders;
+            color: $sorta-white;
+            border-radius: 4px;
+            font-weight: 500;
+            border: 2px solid $sorta-white;
+        }
+        #rem-btn:hover, #read-btn:hover {
+            background-color: $sorta-white;
+            color: $borders;
+            border: 2px solid $borders;
+            font-weight: $bold;
+        }
+    }
+}
+
+.submit {
+    width: auto;
+    margin: 2rem auto 0 auto;
+    .submit-btn {
+        padding: .5rem 1.5rem;
+        font-size: 1.3rem;
+        border: 2px solid $borders;
+        background-color: $bg-color;
+        color: $borders;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: $sorta-white;
+    }
+}

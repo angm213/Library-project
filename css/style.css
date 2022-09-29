@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.nav {
+  width: 100%;
+  background-color: #31C6D4;
+  padding: 3rem 0rem 3rem 0rem;
+  margin: 0;
+  border-bottom: 2px solid #5C2E7E;
+  box-shadow: 0 3px 15px #5C2E7E;
+}
+.nav h1 {
+  color: #EEF1FF;
+  font-weight: 700;
+  margin: 0;
+  padding-left: 6rem;
+  font-size: 3rem;
+}
+@media (max-width: 576px) {
+  .nav h1 {
+    width: 75%;
+    margin: auto;
+    padding: 0;
+    font-size: 2.5rem;
+  }
+}
+
+.card-books-area {
+  width: 80%;
+  padding: 3rem;
+}
+.card-books-area .empty {
+  width: 30%;
+  height: 400px;
+  background-color: #EEF1FF;
+}
+
+.btn {
+  position: fixed;
+  right: 4rem;
+  bottom: 5rem;
+  padding: 0.3rem 1rem 0.5rem 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background-color: #31C6D4;
+  border: 2px solid #5C2E7E;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+}
+.btn .btn-p {
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #EEF1FF;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.card-books-area {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+@media (max-width: 1024px) {
+  .card-books-area {
+    width: 95%;
+    padding: 1rem 0 0 0;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-rows: 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .card-books-area {
+    padding: 1rem 0 0 0;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 0.5rem;
+  }
+}
+.card-books-area .book-body {
+  background-color: #EEF1FF;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #828282;
+  box-shadow: 5px 3px 10px #828282;
+}
+@media (max-width: 576px) {
+  .card-books-area .book-body {
+    padding: 0.5rem;
+  }
+}
+.card-books-area .book-body .title {
+  font-size: 2rem;
+  color: #5C2E7E;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.card-books-area .book-body .author, .card-books-area .book-body .pages {
+  font-size: 1.3rem;
+  margin: 0.75rem auto;
+  text-align: center;
+}
+.card-books-area .book-body #rem-btn, .card-books-area .book-body #read-btn {
+  min-width: 105px;
+  font-size: 1rem;
+  margin-top: 0.7rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #5C2E7E;
+  color: #EEF1FF;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 2px solid #EEF1FF;
+}
+.card-books-area .book-body #rem-btn:hover, .card-books-area .book-body #read-btn:hover {
+  background-color: #EEF1FF;
+  color: #5C2E7E;
+  border: 2px solid #5C2E7E;
+  font-weight: 700;
+}
+
+.submit {
+  width: auto;
+  margin: 2rem auto 0 auto;
+}
+.submit .submit-btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.3rem;
+  border: 2px solid #5C2E7E;
+  background-color: #8BBCCC;
+  color: #5C2E7E;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit button:hover {
+  background-color: #EEF1FF;
+}
+
+footer {
+  width: 100%;
+  background-color: #4C6793;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+}
+footer p {
+  margin: 0.5rem auto;
+  color: #EEF1FF;
+  font-weight: 600;
+}
+
+.modal {
+  width: 30%;
+  margin: auto;
+  background-color: #EEF1FF;
+  border-radius: 5px;
+  padding: 1.5rem;
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  animation: translation 1s forwards;
+}
+@keyframes translation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(25vh);
+  }
+}
+.modal .form-title {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+.modal .form-title h3 {
+  text-align: center;
+  color: #5C2E7E;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.modal .form-title span {
+  font-size: 2rem;
+  color: #5C2E7E;
+  position: absolute;
+  top: -1.5rem;
+  right: -0.5rem;
+  cursor: pointer;
+}
+.modal form .form-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modal form .form-row label {
+  font-size: 1.3rem;
+  padding: 0.3rem 0 0.3rem 0.3rem;
+}
+.modal form .form-row input {
+  background-color: #8BBCCC;
+  border: none;
+  line-height: 2rem;
+  padding-left: 1rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  cursor: default;
+}
+.modal form .form-row input:focus {
+  background-color: #EEF1FF;
+  outline: 2px solid #5C2E7E;
+}
+.modal form .form-row input[type=radio] {
+  margin-top: 1rem;
+  transform: scale(2.3);
+  width: 1rem;
+  margin-left: 0.3rem;
+  margin-right: 0.5rem;
+  background-color: #8BBCCC;
+}
+.modal form .form-row input[type=radio]:focus {
+  outline: none;
+}
+.modal form .form-row .radio-row > label {
+  margin-right: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background-color: #8BBCCC;
+}
+
+/*# sourceMappingURL=style.css.map */

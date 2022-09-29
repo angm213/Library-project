@@ -1,0 +1,84 @@
+@import '_variables.scss';
+
+.modal {
+    width: 30%;
+    margin: auto;
+    background-color: $sorta-white;
+    border-radius: 5px;
+    padding: 1.5rem; 
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    animation: translation 1s forwards;
+        @keyframes translation {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(25vh);
+            }
+        }
+    // align-items: center;
+    // justify-content: center;
+    .form-title {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        h3 {
+            text-align: center;
+            color: $borders;
+            font-size: 3rem;
+            margin: 1rem 0;
+        }
+        span {
+            font-size: 2rem;
+            color: $borders;
+            position: absolute;
+            top: -1.5rem;
+            right: -0.5rem;
+            cursor: pointer;
+        }
+    }
+    form {
+        .form-row {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            label {
+                font-size: 1.3rem;
+                padding: .3rem 0 0.3rem 0.3rem;
+            }
+            input {
+                background-color: $bg-color;
+                border: none;
+                line-height: 2rem;
+                padding-left: 1rem;
+                border-radius: 3px;
+                font-size: 1.2rem;
+                cursor: default;
+            }
+            input:focus {
+                background-color: $sorta-white;
+                outline: 2px solid $borders;
+            }
+            input[type=radio] {
+                margin-top: 1rem;
+                transform: scale(2.3);
+                width: 1rem;
+                margin-left: 0.3rem;
+                margin-right: .5rem;
+                background-color: $bg-color;
+            }
+
+            input[type=radio]:focus {
+                outline: none;
+            }
+            .radio-row > label {
+                margin-right: 1rem;
+            }
+        }
+    }    
+}
