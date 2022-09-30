@@ -20,8 +20,18 @@
                 transform: translateY(25vh);
             }
         }
-    // align-items: center;
-    // justify-content: center;
+    @media (max-width: $mobile-breakpoint) {
+        width: 75%;
+        left: 7%;
+    }
+    @media (min-width: $mobile-breakpoint) {
+        width: 75%;
+        left: 10%;
+    }
+    @media (min-width: $tablet-breakpoint) {
+        width: 30%;
+        left: 35%;
+    }
     .form-title {
         position: relative;
         width: 100%;

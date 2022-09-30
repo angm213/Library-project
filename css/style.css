@@ -182,6 +182,24 @@ footer p {
     transform: translateY(25vh);
   }
 }
+@media (max-width: 576px) {
+  .modal {
+    width: 75%;
+    left: 7%;
+  }
+}
+@media (min-width: 576px) {
+  .modal {
+    width: 75%;
+    left: 10%;
+  }
+}
+@media (min-width: 1024px) {
+  .modal {
+    width: 30%;
+    left: 35%;
+  }
+}
 .modal .form-title {
   position: relative;
   width: 100%;
